@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a new feature, analysis, loader, or improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement to Smart House Research Toolkit.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the research or development need behind the feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like the toolkit to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dataset
+    attributes:
+      label: Relevant dataset context
+      description: |
+        If applicable, identify the source system, release year, sensor,
+        measurement, or file structure involved.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any other approaches you considered.
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you be interested in contributing this?
+      options:
+        - "Yes"
+        - "Maybe"
+        - "No"

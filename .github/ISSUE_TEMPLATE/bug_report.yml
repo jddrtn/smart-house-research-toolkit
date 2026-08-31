@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a problem with the toolkit
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please provide enough detail for someone else to reproduce the problem.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include the smallest useful example you can.
+      placeholder: |
+        1. Load ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.13"
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11, Ubuntu 24.04, macOS..."
+
+  - type: textarea
+    id: dataset
+    attributes:
+      label: Dataset context
+      description: |
+        If relevant, include the dataset release year, source system, file type,
+        sensor, or measurement involved. Do not upload or redistribute source
+        dataset files unless their licence permits it.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add error messages, screenshots, logs, or other useful context.
