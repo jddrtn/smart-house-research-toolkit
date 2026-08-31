@@ -1,3 +1,16 @@
+# DigiTech Smart House datasets are downloaded separately.
+# Keeping them out of Git avoids redistributing the source dataset
+# and prevents large raw data files being committed accidentally.
+data/raw/*
+data/processed/*
+
+# Temporary output generated while inspecting the raw Smart House datasets.
+dataset-inspection.txt
+
+# Keep the directories themselves in the repository.
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
