@@ -28,4 +28,4 @@ jobs:
         run: pytest
 
       - name: Run Ruff
-        run: ruff check src tests
+        run: ruff check src tests examples
