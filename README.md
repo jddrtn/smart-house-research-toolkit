@@ -149,6 +149,17 @@ The dataset is deliberately kept separate from the source code so that this repo
 
 The API is still being developed, so expect it to change as the project grows.
 
+To explore the catalogue without downloading the dataset, run the
+[dataset catalogue example](examples/dataset_catalogue.py) after installation:
+
+```bash
+python examples/dataset_catalogue.py
+```
+
+It lists the available dataset release years and source groups, and checks whether
+WeatherLink is available in the latest catalogued release. These years describe
+dataset releases, not the dates of individual observations.
+
 The first implemented source loader handles WeatherLink exports:
 
 ```python
